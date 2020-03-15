@@ -4,11 +4,10 @@ class Shoe
   
   BRANDS = []
 
-  def initialize(brand)
-    @brand = brand
-    if !(BRANDS.include?(@brands))
-    BRANDS << brand 
-  end 
+def initialize(brand)
+    @brand = brand	    @brand = brand
+    BRANDS << brand unless BRANDS.any? { |b| b == brand }
+  end	  
   end
 
   def cobble
