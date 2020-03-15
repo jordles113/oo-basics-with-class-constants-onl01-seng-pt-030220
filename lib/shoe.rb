@@ -6,7 +6,7 @@ class Shoe
 
 def initialize(brand)
     @brand = brand	   
-    if BRANDS << brand.include?  
+    if BRANDS << brand.include?(brand) 
 end 
   def cobble
     self.condition = "new"
